@@ -22,14 +22,19 @@ import HelloWorld from "./components/HomePage.vue";
    -moz-osx-font-smoothing: grayscale;
    text-align: center;
    color: #2c3e50;
-   margin-top: 60px;
+   margin-top: 10px;
    
  }
  
- h1{
+ h1, h2{
    font-family: Horizon, sans-serif;
-   font-size: 2em;
  }
+
+p{
+  font-family: Poppins;
+  font-size: 1.1em;
+  color: black;
+}
 
 
  body{
@@ -63,7 +68,7 @@ import HelloWorld from "./components/HomePage.vue";
  
  .container .card .face.face1{
    position: relative;
-   background: #6510ac;
+   background: #6211c4;
    display: flex;
    justify-content: center;
    align-content:center;
@@ -124,7 +129,7 @@ import HelloWorld from "./components/HomePage.vue";
     justify-content: center;
     padding: 20px;
    box-sizing: border-box;
-   box-shadow: 0 20px 50px rgba(0,0,0,.8);
+   box-shadow: 0 20px 50px rgba(132, 132, 133, 0.8);
    transform: translateY(-100px);
  }
  
@@ -202,5 +207,6 @@ import HelloWorld from "./components/HomePage.vue";
  }
  
  @import url('https://fonts.cdnfonts.com/css/horizon');
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
  </style>
  

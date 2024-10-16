@@ -48,14 +48,17 @@
       </Dialog>
     </header>
 
-    <div class="relative isolate px-6 pt-14 lg:px-8">
-      <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
-        <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)" />
-      </div>
+    <div class="relative isolate px-6 lg:px-8">
+      <!--<div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
+        <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"/>
+      </div>-->
       <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
   <div class="text-center">
-    <h1 class="text-4xl font-bold text-gray-900">Full-Stack Dev Muneer Doman</h1>
-    <!-- <p class="mt-6 text-lg leading-8 text-gray-600">Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat fugiat aliqua.</p>-->
+    <h1 class="text-6xl font-bold text-gray-900">Full-Stack Dev Muneer Doman</h1>
+    <br>
+    <p class="mt-6 text-lg leading-8 text-gray-600">
+      Hi there! I'm a web developer based in Cape Town, South Africa. When I’m not immersed in code, you’ll often find me jotting down ideas on paper. I also love creating music and playing sports, which fuels my creativity. I'm always eager to explore new horizons and embark on exciting adventures.
+     </p>
     <div class="mt-10 flex items-center justify-center gap-x-6">
       <div class="box">
         <a href="#" class="px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Scroll Down</a>
@@ -71,23 +74,27 @@
     </div>
   </div>
   <section>
-    <h2>
+    <h2 class="text-4xl font-bold text-gray-900">
       Some Personal Projects I Worked On
       </h2>
   </section>
+  <br>
   <section id="portfolio">
   <div class="container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"> <!-- Add gap-8 for spacing -->
     <div class="card">
       <div class="face face1">
         <div class="content">
           <i class="fab fa-windows"></i>
-          <h3>Windows</h3>
+          <img src="../assets/port.png" alt="Windows" class="w-full h-auto" style="width:300px;
+   height: 230px;x" />
+          <h3></h3>
         </div>
       </div>
       <div class="face face2">
         <div class="content">
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
-          <a href="#" type="button">Read More</a>
+         
+          <a href="#" type="button">Live Website</a><a href="#" type="button">Source Code</a>
         </div>
       </div>
     </div>
@@ -122,6 +129,9 @@
       </div>
     </div>
   </div>
+</section>
+<section>
+
 </section>
 
   
