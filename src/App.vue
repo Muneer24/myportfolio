@@ -1,20 +1,28 @@
 <template>
   <div id="app">
-    <HelloWorld /> <!-- Include your component here -->
+    <HomePage /> 
+    <TechStack />
+    <WorkXp />
+    <Testimonials />
   </div>
- </template>
- 
- <script>
-import HelloWorld from "./components/HomePage.vue";
- 
- export default {
-   name: "App",
-   components: {
-     HelloWorld,
-   },
- };
- </script>
- 
+</template>
+
+<script>
+import HomePage from "./components/HomePage.vue";
+import TechStack from "./components/TechStack.vue";
+import WorkXp from "./components/WorkXp.vue";
+import Testimonials from "./components/Testimonials.vue";
+
+export default {
+  components: {
+    HomePage,
+    TechStack,
+    WorkXp,
+    Testimonials
+  }
+};
+</script>
+
  <style>
  #app {
    font-family: Avenir, Helvetica, Arial, sans-serif, Horizon;
@@ -46,121 +54,133 @@ p{
    align-items: center;
  }
  
- .container{
-   width: 1000px;
+ /* Container settings */
+.container {
+   width: 100%; /* Full width for responsiveness */
+   max-width: 1000px; /* Maintain max width */
    position: relative;
    display: flex;
-   justify-content: space-between;
-   flex-wrap:wrap;
-   
- }
- 
- .container .card{
+   justify-content: center; /* Center items horizontally */
+   flex-wrap: wrap; /* Allow wrapping */
+}
+
+/* Card settings */
+.container .card {
    position: relative;
- }
- 
- .container .card .face{
-   width:300px;
-   height: 200px;
-   transition:.4s;
-   
- }
- 
- .container .card .face.face1{
+   flex: 1 1 300px; /* Allow cards to grow/shrink, with a minimum width of 300px */
+   margin: 10px; /* Add margin for spacing */
+}
+
+/* Face settings */
+.container .card .face {
+   width: 100%; /* Full width of the card */
+   height: 200px; /* Fixed height */
+   transition: .4s;
+}
+
+.container .card .face.face1 {
    position: relative;
    background: #6211c4;
    display: flex;
    justify-content: center;
-   align-content:center;
    align-items: center;
    z-index: 1;
    transform: translateY(100px);
- }
- 
- .container .card:hover .face.face1{
+}
+
+/* Hover effects */
+.container .card:hover .face.face1 {
    transform: translateY(0);
-   box-shadow:
-     inset 0 0 60px whitesmoke,
-     inset 20px 0 80px #f0f,
-     inset -20px 0 80px #0ff,
-     inset 20px 0 300px #f0f,
-     inset -20px 0 300px #0ff,
-     0 0 50px #fff,
-     -10px 0 80px #f0f,
-     10px 0 80px #0ff;
-    
- }
- 
- 
- .container .card .face.face1 .content{
+   box-shadow: inset 0 0 60px whitesmoke,
+               inset 20px 0 80px #f0f,
+               inset -20px 0 80px #0ff,
+               inset 20px 0 300px #f0f,
+               inset -20px 0 300px #0ff,
+               0 0 50px #fff,
+               -10px 0 80px #f0f,
+               10px 0 80px #0ff;
+}
+
+/* Content settings */
+.container .card .face.face1 .content {
    opacity: .2;
-   transition:  0.5s;
+   transition: 0.5s;
    text-align: center;
- }
- 
- .container .card:hover .face.face1 .content{
+}
+
+.container .card:hover .face.face1 .content {
    opacity: 1;
- }
- 
- .container .card .face.face1 .content i{
+}
+
+.container .card .face.face1 .content i {
    font-size: 3em;
    color: white;
    display: inline-block;
-    
- }
- 
- .container .card .face.face1 .content h3{
+}
+
+.container .card .face.face1 .content h3 {
    font-size: 1em;
    color: white;
    text-align: center;
-   
- 
- }
- 
- .container .card .face.face1 .content a{
-    transition: .5s;
- }
- 
- .container .card .face.face2{
-    position: relative;
-    background: whitesmoke;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+}
+
+.container .card .face.face1 .content a {
+   transition: .5s;
+}
+
+.container .card .face.face2 {
+   position: relative;
+   background: whitesmoke;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 20px;
    box-sizing: border-box;
    box-shadow: 0 20px 50px rgba(132, 132, 133, 0.8);
    transform: translateY(-100px);
- }
- 
- .container .card:hover .face.face2{
-     transform: translateY(0);
- 
- 
- }
- 
- .container .card .face.face2 .content p, a{
+}
+
+.container .card:hover .face.face2 {
+   transform: translateY(0);
+}
+
+.container .card .face.face2 .content p,
+.container .card .face.face2 .content a {
    font-size: 10pt;
-   margin: 0 ;
+   margin: 0;
    padding: 0;
-   color:#333;
- }
- 
- .container .card .face.face2 .content a{
-   text-decoration:none;
+   color: #333;
+}
+
+.container .card .face.face2 .content a {
+   text-decoration: none;
    color: black;
    box-sizing: border-box;
-   outline : 1px dashed #333;
+   outline: 1px dashed #333;
    padding: 10px;
    margin: 15px 0 0;
    display: inline-block;
- }
- 
- .container .card .face.face2 .content a:hover{
-   background: #333 ;
-   color: whitesmoke; 
-   box-shadow: inset 0px 0px 10px rgba(0,0,0,0.5);
- }
+}
+
+.container .card .face.face2 .content a:hover {
+   background: #333;
+   color: whitesmoke;
+   box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive styles */
+@media (max-width: 640px) { /* Mobile view */
+   .container {
+      flex-direction: column; /* Stack cards vertically */
+      align-items: center; /* Center cards horizontally */
+   }
+
+   .container .card {
+      width: 100%; /* Full width for each card */
+      margin: 10px 0; /* Margin between cards */
+   }
+}
+
  
  .box {
    background: hsl(0, 0%, 0%);

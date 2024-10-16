@@ -61,7 +61,7 @@
      </p>
     <div class="mt-10 flex items-center justify-center gap-x-6">
       <div class="box">
-        <a href="#" class="px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Scroll Down</a>
+        <a href="#" class="px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600 font-family: Poppins">Scroll Down</a>
       </div>
       <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Learn more <span aria-hidden="true">→</span></a>
     </div>
