@@ -54,7 +54,7 @@
       </div>-->
       <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
   <div class="text-center">
-    <h1 class="text-6xl font-bold text-gray-900">Full-Stack Dev Muneer Doman</h1>
+    <h1 class="text-7xl font-bold text-gray-900">Full-Stack Dev Muneer Doman</h1>
     <br>
     <p class="mt-6 text-lg leading-8 text-gray-600">
       Hi there! I'm a web developer based in Cape Town, South Africa. When I’m not immersed in code, you’ll often find me jotting down ideas on paper. I also love creating music and playing sports, which fuels my creativity. I'm always eager to explore new horizons and embark on exciting adventures.
@@ -85,9 +85,7 @@
       <div class="face face1">
         <div class="content">
           <i class="fab fa-windows"></i>
-          <img src="../assets/port.png" alt="Windows" class="w-full h-auto" style="width:300px;
-   height: 230px;x" />
-          <h3></h3>
+          <h3>Admin Dashboard</h3>
         </div>
       </div>
       <div class="face face2">
@@ -103,7 +101,7 @@
       <div class="face face1">
         <div class="content">
           <i class="fab fa-android"></i>
-          <h3>Android</h3>
+          <h3>Management System</h3>
         </div>
       </div>
       <div class="face face2">
@@ -118,11 +116,12 @@
       <div class="face face1">
         <div class="content">
           <i class="fab fa-apple"></i>
-          <h3>Apple</h3>
+          <h3>Landing Page</h3>
         </div>
       </div>
       <div class="face face2">
         <div class="content">
+          <br>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ab repudiandae, explicabo voluptate et hic cum ratione a. Officia delectus illum perferendis maiores quia molestias vitae fugiat aspernatur alias corporis?</p>
           <a href="#" type="button">Read More</a>
         </div>
@@ -130,11 +129,7 @@
     </div>
   </div>
 </section>
-<section>
-
-</section>
-
-  
+<br>
 </template>
 
 <script setup>
@@ -143,8 +138,9 @@ import { Dialog, DialogPanel } from '@headlessui/vue'
 import { Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 
 const navigation = [
-  { name: 'About', href: '#' },
+  { name: 'Tech Stack', href: '#' },
   { name: 'Portfolio', href: '#portfolio' },
+  { name: 'WorkXp', href: '#' },
   { name: 'Testimonials', href: '#' },
   { name: 'Contact', href: '#' },
 ]

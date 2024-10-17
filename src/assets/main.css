@@ -1,3 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: 'Popcat';
+  src:  url('@/assets/fonts/Popcat.otf') format('opentype'); /* Use the .otf file */
+  font-weight: normal;
+  font-style: normal;
+}

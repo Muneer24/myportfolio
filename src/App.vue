@@ -34,8 +34,13 @@ export default {
    
  }
  
+ .custom-font {
+    font-family: 'Popcat', sans-serif; /* Fallback to sans-serif */
+}
+
  h1, h2{
-   font-family: Horizon, sans-serif;
+   font-family: Popcat, Horizon, sans-serif;
+   color: black;
  }
 
 p{

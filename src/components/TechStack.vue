@@ -1,7 +1,165 @@
-<template>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000000" fill-opacity="1" d="M0,192L26.7,160C53.3,128,107,64,160,42.7C213.3,21,267,43,320,58.7C373.3,75,427,85,480,101.3C533.3,117,587,139,640,128C693.3,117,747,75,800,90.7C853.3,107,907,181,960,208C1013.3,235,1067,213,1120,202.7C1173.3,192,1227,192,1280,197.3C1333.3,203,1387,213,1413,218.7L1440,224L1440,320L1413.3,320C1386.7,320,1333,320,1280,320C1226.7,320,1173,320,1120,320C1066.7,320,1013,320,960,320C906.7,320,853,320,800,320C746.7,320,693,320,640,320C586.7,320,533,320,480,320C426.7,320,373,320,320,320C266.7,320,213,320,160,320C106.7,320,53,320,27,320L0,320Z"></path></svg>
+<template>            
+    <div class="tech">
+      <!-- Your work experience content goes here -->
+      <h2 class="text-5xl font-bold text-gray-900">Tech Stack</h2>
+    </div>
+    <div class="wrapper">
+  <div class="tiles-card root">
+    <div class="tiles-overlay">
+    </div>
+    <div class="tiles-circle">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png" data-v-5e99277a="">
+      <p>
+        VueJs
+      </p>
+    </div>
+  </div>
+</div>          
+        
 </template>
-
+  
 <script>
-
+export default {
+  name: 'TechStack'
+  // Add any data, methods, or lifecycle hooks here if needed
+};
 </script>
+
+<style scoped>
+
+
+h1, h2{
+   font-family: Popcat, Horizon, sans-serif;
+   color: rgb(0, 0, 0);
+ }
+
+p{
+  font-family: Poppins;
+  font-size: 1.1em;
+  color: rgb(0, 0, 0);
+}
+
+
+.tech {
+  background-color: #ffffff; /* Change to your desired color */
+  padding: 20px;
+  border-radius: 8px; /* Optional, for rounded corners */
+}
+
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 50vh;
+  background-color: #fefefe;
+}
+
+
+* {
+  box-sizing: content-box;
+}
+.root {
+  --bg-color: #133337;
+  --bg-color-light: #fff;
+  --box-shadow-color: rgba(19, 51, 55, 0.75);
+}
+
+.tiles-card {
+  width: 135px;
+  height: 135px;
+  background: var(--bg-color-light);
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0px 26px rgba(0, 0, 0, 0.09);
+  border-radius: 8px;
+  transition: all 0.3s ease-out;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tiles-overlay {
+  width: 78px;
+  height: 78px;
+  position: absolute;
+  border-radius: 50%;
+  background: var(--bg-color);
+  margin: auto;
+  z-index: 0;
+  transition: transform 0.3s ease-out;
+}
+
+.tiles-circle {
+  width: 91px;
+  height: 91px;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid var(--bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s ease-out;
+  margin: auto;
+}
+
+.tiles-circle::after {
+  content: "";
+  width: 78px;
+  height: 78px;
+  display: block;
+  position: absolute;
+  background: var(--bg-color);
+  border-radius: 50%;
+  transition: opacity 0.3s ease-out;
+}
+
+.tiles-circle img {
+  height: 45px;
+  margin-top: 5px;
+  z-index: 10000;
+  transform: scale(1) translateZ(0) rotateY(0deg);
+  transition: all 0.3s ease-out;
+  position: static;
+}
+
+.tiles-circle p {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0) translateZ(0) rotateY(180deg);
+  transition: all 0.3s ease-out;
+  position: absolute;
+  z-index: 10000;
+  cursor: default;
+}
+
+.tiles-card:hover {
+  transform: translateY(-5px) scale(1.005) translateZ(0);
+  box-shadow: 0 0px 36px rgba(0, 0, 0, 0.11), 0 0px 46px var(--box-shadow-color);
+  .tiles-overlay {
+    transform: scale(4) translateZ(0);
+  }
+  .tiles-circle {
+    border-color: var(--bg-color-light);
+    background: var(--bg-color);
+  }
+  .tiles-circle::after {
+    background: var(--bg-color-light);
+  }
+  .tiles-circle img {
+    opacity: 0;
+    transform: scale(0) translateZ(0) rotateY(180deg);
+    position: absolute;
+  }
+  .tiles-circle p {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1) translateZ(0) rotateY(0deg);
+    position: static;
+  }
+}
+
+</style>
