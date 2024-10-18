@@ -4,17 +4,31 @@
       <h2 class="text-5xl font-bold text-gray-900">Tech Stack</h2>
     </div>
     <div class="wrapper">
-  <div class="tiles-card root">
-    <div class="tiles-overlay">
-    </div>
+  <div class="tiles-card root vue-card">
+    <div class="tiles-overlay"></div>
     <div class="tiles-circle">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png" data-v-5e99277a="">
-      <p>
-        VueJs
-      </p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png">
+      <p>VueJs</p>
     </div>
   </div>
-</div>          
+
+  <div class="tiles-card root react-card">
+    <div class="tiles-overlay"></div>
+    <div class="tiles-circle">
+      <img src="../assets/react.png">
+      <p>React</p>
+    </div>
+  </div>
+
+  <div class="tiles-card root angular-card">
+    <div class="tiles-overlay"></div>
+    <div class="tiles-circle">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Angular_icon.svg/1024px-Angular_icon.svg.png">
+      <p>Angular</p>
+    </div>
+  </div>
+</div>
+       
         
 </template>
   
@@ -46,6 +60,18 @@ p{
   border-radius: 8px; /* Optional, for rounded corners */
 }
 
+.react-card:hover {
+  background-color: #00d8ff; /* React blue */
+}
+
+.angular-card:hover {
+  background-color: #DD0031; /* Angular red */
+}
+
+.vue-card:hover {
+  background-color: #41B883; /* Vue.js green */
+}
+
 .wrapper {
   display: flex;
   align-items: center;
@@ -55,12 +81,12 @@ p{
   background-color: #fefefe;
 }
 
-
 * {
   box-sizing: content-box;
 }
+
 .root {
-  --bg-color: #133337;
+  --bg-color: #33c7db00;
   --bg-color-light: #fff;
   --box-shadow-color: rgba(19, 51, 55, 0.75);
 }
@@ -139,27 +165,33 @@ p{
 .tiles-card:hover {
   transform: translateY(-5px) scale(1.005) translateZ(0);
   box-shadow: 0 0px 36px rgba(0, 0, 0, 0.11), 0 0px 46px var(--box-shadow-color);
-  .tiles-overlay {
-    transform: scale(4) translateZ(0);
-  }
-  .tiles-circle {
-    border-color: var(--bg-color-light);
-    background: var(--bg-color);
-  }
-  .tiles-circle::after {
-    background: var(--bg-color-light);
-  }
-  .tiles-circle img {
-    opacity: 0;
-    transform: scale(0) translateZ(0) rotateY(180deg);
-    position: absolute;
-  }
-  .tiles-circle p {
-    opacity: 1;
-    visibility: visible;
-    transform: scale(1) translateZ(0) rotateY(0deg);
-    position: static;
-  }
 }
+
+.tiles-card:hover .tiles-overlay {
+  transform: scale(4) translateZ(0);
+}
+
+.tiles-card:hover .tiles-circle {
+  border-color: var(--bg-color-light);
+  background: var(--bg-color);
+}
+
+.tiles-card:hover .tiles-circle::after {
+  background: var(--bg-color-light);
+}
+
+.tiles-card:hover .tiles-circle img {
+  opacity: 0;
+  transform: scale(0) translateZ(0) rotateY(180deg);
+  position: absolute;
+}
+
+.tiles-card:hover .tiles-circle p {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1) translateZ(0) rotateY(0deg);
+  position: static;
+}
+
 
 </style>
