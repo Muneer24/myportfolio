@@ -4,7 +4,7 @@
         <div class="flex flex-col items-center">
             <div class="text-center">
                 <p class="text-lg font-medium text-gray-600 font-pj"></p>
-                <h2 class="mt-4 text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl font-pj">Our happy clients say about us</h2>
+                <h2 class="mt-4 text-3xl font-bold text-gray-900 sm:text-4xl xl:text-4xl font-pj">Testimonials</h2>
             </div>
 
             <div class="mt-8 text-center md:mt-16 md:order-3">
@@ -13,10 +13,14 @@
 
             <div class="relative mt-10 md:mt-24 md:order-2">
                 <div class="absolute -inset-x-1 inset-y-16 md:-inset-x-2 md:-inset-y-6">
-                    <div class="w-full h-full max-w-5xl mx-auto rounded-3xl opacity-30 blur-lg filter" style="background: linear-gradient(90deg, #44ff9a -0.55%, #44b0ff 22.86%, #8b44ff 48.36%, #ff6644 73.33%, #ebff70 99.34%)"></div>
+                    <div class="w-full h-full max-w-5xl mx-auto rounded-3xl opacity-30 blur-lg filter" style="background: #000046;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+"></div>
                 </div>
 
-                <div class="relative grid max-w-lg grid-cols-1 gap-6 mx-auto md:max-w-none lg:gap-10 md:grid-cols-3">
+                <div class="relative grid max-w-lg grid-cols-1 gap-8 mx-auto md:max-w-none lg:gap-10 md:grid-cols-3">
                     <div class="flex flex-col overflow-hidden shadow-xl">
                         <div class="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7">
                             <div class="flex-1">

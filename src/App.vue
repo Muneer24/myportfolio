@@ -4,6 +4,7 @@
     <TechStack />
     <WorkXp />
     <Testimonials />
+    <Contact />
   </div>
 </template>
 
@@ -12,13 +13,15 @@ import HomePage from "./components/HomePage.vue";
 import TechStack from "./components/TechStack.vue";
 import WorkXp from "./components/WorkXp.vue";
 import Testimonials from "./components/Testimonials.vue";
+import Contact from "./components/Contact.vue";
 
 export default {
   components: {
     HomePage,
     TechStack,
     WorkXp,
-    Testimonials
+    Testimonials,
+    Contact
   }
 };
 </script>
@@ -85,7 +88,9 @@ p{
 
 .container .card .face.face1 {
    position: relative;
-   background: #6211c4;
+   background: #0f0c29;  /* fallback for old browsers */
+   background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(to right, #24243e, #302b63, #0f0c29);
    display: flex;
    justify-content: center;
    align-items: center;
@@ -141,7 +146,7 @@ p{
    justify-content: center;
    padding: 20px;
    box-sizing: border-box;
-   box-shadow: 0 20px 50px rgba(132, 132, 133, 0.8);
+   box-shadow: 0 20px 50px rgba(214, 215, 216, 0.8);
    transform: translateY(-100px);
 }
 

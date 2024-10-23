@@ -1,35 +1,57 @@
-<template>            
-    <div class="tech">
-      <!-- Your work experience content goes here -->
-      <h2 class="text-5xl font-bold text-gray-900">Tech Stack</h2>
-    </div>
-    <div class="wrapper">
-  <div class="tiles-card root vue-card">
-    <div class="tiles-overlay"></div>
-    <div class="tiles-circle">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png">
-      <p>VueJs</p>
-    </div>
+<template>
+  <div class="tech">
+    <h2 class="text-4xl font-bold text-gray-900 text-center">Tech Stack</h2>
   </div>
+  
+  <div class="wrapper">
+    <div class="tiles-card root vue-card">
+      <div class="tiles-overlay"></div>
+      <div class="tiles-circle">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Vue.js_Logo_2.svg/1184px-Vue.js_Logo_2.svg.png" alt="VueJs">
+        <p>VueJs</p>
+      </div>
+    </div>
 
-  <div class="tiles-card root react-card">
-    <div class="tiles-overlay"></div>
-    <div class="tiles-circle">
-      <img src="../assets/react.png">
-      <p>React</p>
+    <div class="tiles-card root react-card">
+      <div class="tiles-overlay"></div>
+      <div class="tiles-circle">
+        <img src="../assets/react.png" alt="React">
+        <p>React</p>
+      </div>
     </div>
-  </div>
 
-  <div class="tiles-card root angular-card">
-    <div class="tiles-overlay"></div>
-    <div class="tiles-circle">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/62/Angular_icon.svg/1024px-Angular_icon.svg.png">
-      <p>Angular</p>
+    <div class="tiles-card root angular-card">
+      <div class="tiles-overlay"></div>
+      <div class="tiles-circle">
+        <img src="../assets/mysql.png" alt="Angular">
+        <p>MySQL</p>
+      </div>
+    </div>
+
+    <div class="tiles-card root javascript-card">
+      <div class="tiles-overlay"></div>
+      <div class="tiles-circle">
+        <img src="../assets/javascript.png" alt="Javascript">
+        <p>Javascript</p>
+      </div>
+    </div>
+
+    <div class="tiles-card root python-card">
+      <div class="tiles-overlay"></div>
+      <div class="tiles-circle">
+        <img src="../assets/python.png" alt="Python">
+        <p>Python</p>
+      </div>
+    </div>
+
+    <div class="tiles-card root tailwind-card">
+      <div class="tiles-overlay"></div>
+      <div class="tiles-circle">
+        <img src="../assets/tailwind.png" alt="Tailwind">
+        <p>Tailwind</p>
+      </div>
     </div>
   </div>
-</div>
-       
-        
 </template>
   
 <script>
@@ -40,7 +62,6 @@ export default {
 </script>
 
 <style scoped>
-
 
 h1, h2{
    font-family: Popcat, Horizon, sans-serif;
@@ -65,16 +86,31 @@ p{
 }
 
 .angular-card:hover {
-  background-color: #DD0031; /* Angular red */
+  background-color: #FEC83D; /* Angular red */
 }
 
 .vue-card:hover {
   background-color: #41B883; /* Vue.js green */
 }
 
+.javascript-card:hover {
+  background-color: #f2fa06; /* Javascript Yellow */
+}
+
+.python-card:hover {
+  background-color: #4B8BBE;
+
+/* Python Blue & Yellow */
+}
+
+.tailwind-card:hover {
+  background-color: #0daece; /* Tailwind Blue */
+}
+
 .wrapper {
   display: flex;
   align-items: center;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
   justify-content: center;
   width: 100vw;
   height: 50vh;
@@ -94,6 +130,7 @@ p{
 .tiles-card {
   width: 135px;
   height: 135px;
+  margin: 10px; /* Space between cards */
   background: var(--bg-color-light);
   overflow: hidden;
   position: relative;
@@ -128,6 +165,7 @@ p{
   align-items: center;
   position: relative;
   z-index: 1;
+  
   transition: all 0.3s ease-out;
   margin: auto;
 }
@@ -193,5 +231,10 @@ p{
   position: static;
 }
 
-
+  @media (max-width: 600px) {
+  .tiles-card {
+    width: 100px; /* Adjust card size for mobile */
+    height: 100px;
+  }
+}
 </style>
