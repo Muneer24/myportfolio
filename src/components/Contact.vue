@@ -56,62 +56,66 @@
           </div>
 
           <div class="lg:pl-12">
-              <div class="overflow-hidden bg-white rounded-md">
-                  <div class="p-6 sm:p-10">
-                      <h3 class="text-3xl font-semibold text-black">Let’s Create Together!</h3>
-                      <p class="mt-4 text-base text-gray-600">Don’t hesitate to reach out I'm eager to explore collaboration opportunities with you!</p>
+    <div class="overflow-hidden bg-white rounded-md">
+        <div class="p-6 sm:p-10">
+            <h3 class="text-3xl font-semibold text-black">Let’s Create Together!</h3>
+            <p class="mt-4 text-base text-gray-600">Don’t hesitate to reach out I'm eager to explore collaboration opportunities with you!</p>
 
-                      <form action="#" method="POST" class="mt-4">
-                          <div class="space-y-6">
-                              <div>
-                                  <label for="" class="text-base font-medium text-gray-900"> </label>
-                                  <div class="mt-2.5 relative">
-                                      <input
-                                          type="text"
-                                          name=""
-                                          id=""
-                                          placeholder="Enter your full name"
-                                          class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-orange-500 focus:border-orange-500 caret-orange-500"
-                                      />
-                                  </div>
-                              </div>
+            <form action="https://formspree.io/f/mdkokygr" method="POST" class="mt-4">
+                <div class="space-y-6">
+                    <div>
+                        <label for="firstName" class="text-base font-medium text-gray-900"></label>
+                        <div class="mt-2.5 relative">
+                            <input
+                                type="text"
+                                name="FirstName"
+                                id="firstName"
+                                placeholder="Enter your First Name"
+                                required
+                                class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-orange-500 focus:border-orange-500 caret-orange-500"
+                            />
+                        </div>
+                    </div>
 
-                              <div>
-                                  <label for="" class="text-base font-medium text-gray-900"></label>
-                                  <div class="mt-2.5 relative">
-                                      <input
-                                          type="text"
-                                          name=""
-                                          id=""
-                                          placeholder="Enter your full name"
-                                          class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-orange-500 focus:border-orange-500 caret-orange-500"
-                                      />
-                                  </div>
-                              </div>
+                    <div>
+                        <label for="surname" class="text-base font-medium text-gray-900"></label>
+                        <div class="mt-2.5 relative">
+                            <input
+                                type="text"
+                                name="Surname"
+                                id="surname"
+                                placeholder="Enter your Surname"
+                                required
+                                class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md focus:outline-none focus:ring-orange-500 focus:border-orange-500 caret-orange-500"
+                            />
+                        </div>
+                    </div>
 
-                              <div>
-                                  <label for="" class="text-base font-medium text-gray-900"></label>
-                                  <div class="mt-2.5 relative">
-                                      <textarea
-                                          name=""
-                                          id=""
-                                          placeholder="Enter your project brief"
-                                          class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md resize-y focus:outline-none focus:ring-orange-500 focus:border-orange-500 caret-orange-500"
-                                          rows="4"
-                                      ></textarea>
-                                  </div>
-                              </div>
+                    <div>
+                        <label for="projectBrief" class="text-base font-medium text-gray-900"></label>
+                        <div class="mt-2.5 relative">
+                            <textarea
+                                name="Project Brief"
+                                id="projectBrief"
+                                placeholder="Enter your project brief"
+                                required
+                                class="block w-full px-4 py-4 text-black placeholder-gray-500 transition-all duration-200 bg-white border border-gray-200 rounded-md resize-y focus:outline-none focus:ring-orange-500 focus:border-orange-500 caret-orange-500"
+                                rows="4"
+                            ></textarea>
+                        </div>
+                    </div>
 
-                              <div>
-                                  <button type="submit" class="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-white transition-all duration-200 custom-gradient border border-transparent rounded-md focus:outline-none hover:bg-#9e16c3">
-                                      Connect
-                                  </button>
-                              </div>
-                          </div>
-                      </form>
-                  </div>
-              </div>
-          </div>
+                    <div>
+                        <button type="submit" class="inline-flex items-center justify-center w-full px-4 py-4 text-base font-semibold text-white transition-all duration-200 custom-gradient border border-transparent rounded-md focus:outline-none hover:bg-#9e16c3">
+                            Connect
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
 
           <div class="md:hidden">
               <div class="flex items-center">
@@ -143,7 +147,7 @@
               </div>
 
               <blockquote class="mt-6">
-                  <p class="text-lg leading-relaxed text-white">You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change and click save.</p>
+                  <!--<p class="text-lg leading-relaxed text-white">You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change and click save.</p>-->
               </blockquote>
 
               <div class="flex items-center mt-8">

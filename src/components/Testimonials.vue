@@ -19,7 +19,6 @@ background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, F
 /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 "></div>
                 </div>
-
                 <div class="relative grid max-w-lg grid-cols-1 gap-8 mx-auto md:max-w-none lg:gap-10 md:grid-cols-3">
                     <div class="flex flex-col overflow-hidden shadow-xl">
                         <div class="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7">
@@ -51,12 +50,10 @@ background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, F
                                         />
                                     </svg>
                                 </div>
-
                                 <blockquote class="flex-1 mt-8">
                                     <p class="text-lg leading-relaxed text-gray-900 font-pj">“You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the page, make the change.”</p>
                                 </blockquote>
                             </div>
-
                             <div class="flex items-center mt-8">
                                 <img class="flex-shrink-0 object-cover rounded-full w-11 h-11" src="https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-1.png" alt="" />
                                 <div class="ml-4">
@@ -66,7 +63,6 @@ background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, F
                             </div>
                         </div>
                     </div>
-
                     <div class="flex flex-col overflow-hidden shadow-xl">
                         <div class="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7">
                             <div class="flex-1">
@@ -97,12 +93,10 @@ background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, F
                                         />
                                     </svg>
                                 </div>
-
                                 <blockquote class="flex-1 mt-8">
                                     <p class="text-lg leading-relaxed text-gray-900 font-pj">“Simply the best. Better than all the rest. I’d recommend this product to beginners and advanced users.”</p>
                                 </blockquote>
                             </div>
-
                             <div class="flex items-center mt-8">
                                 <img class="flex-shrink-0 object-cover rounded-full w-11 h-11" src="https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-male-2.png" alt="" />
                                 <div class="ml-4">
@@ -112,7 +106,6 @@ background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, F
                             </div>
                         </div>
                     </div>
-
                     <div class="flex flex-col overflow-hidden shadow-xl">
                         <div class="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7">
                             <div class="flex-1">
@@ -143,12 +136,10 @@ background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, F
                                         />
                                     </svg>
                                 </div>
-
                                 <blockquote class="flex-1 mt-8">
                                     <p class="text-lg leading-relaxed text-gray-900 font-pj">“I cannot believe that I have got a brand new landing page after getting Omega. It was super easy to edit and publish.”</p>
                                 </blockquote>
                             </div>
-
                             <div class="flex items-center mt-8">
                                 <img class="flex-shrink-0 object-cover rounded-full w-11 h-11" src="https://cdn.rareblocks.xyz/collection/clarity/images/testimonial/4/avatar-female.png" alt="" />
                                 <div class="ml-4">
